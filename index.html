@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume/Portofolio @Jamaal</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!--modal style-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+    </style>
+    <style>
+        #Btntop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #Btntop:hover {
+            background-color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle img-thumbnail"
+                src="assets/images/fotocv.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Muh. Jamaaluddin Irsyaad</h1>
+                <h2 class="desc">Web & Android Developer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/jamaaluddin4" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="Twitter"
+                                class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/muh-jamaaluddin-irsyaad-4778b7208/" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="LinkedIn"
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/MuhJamaaluddinIrsyaad" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="Github"
+                                class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/15334517/muh-jamaaluddin-irsyaad"
+                            data-toggle="tooltip" data-placement="top" title="Stackoverflow" target="_blank"><i
+                                class="fab fa-stack-overflow"></i></a></li>
+                    <li class="list-inline-item"><a href="https://medium.com/@mjirsyaad14" target="_blank"><i
+                                data-toggle="tooltip" data-placement="top" title="Medium"
+                                class="fab fa-medium-m"></i></a>
+                    </li>
+                </ul><br><br><br>
+            </div>
+            <!--//profile-->
+            <!--modal-->
+            <!-- The Modal -->
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pesan :</p>
+                            <p>"Saya tertarik dengan profil anda!"</p>
+                        </div>
+                        <button type="submit" class="btn"><a
+                                href="https://api.whatsapp.com/send?phone=6281229907422&text=Saya%0Atertarik%0Adengan%0Aprofil%0Aanda!"
+                                target="_blank">Kirim Whattsapp!</a></button>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <!--//container-->
+    </header>
+    <!--//header-->
+    <div class="container sections-wrapper">
+        <div class="row justify-content-center">
+            <div class="col-10 info-panel">
+                <div class="row">
+                    <div class="col-lg text-center">
+                        <img src="assets/images/plan/2.jpg" alt="Project" class="img-fluid float-left rounded-circle">
+                        <a href="#project">
+                            <h4>Project</h4>
+                            <p>"Project | Kursus"</p><br><br>
+                        </a>
+                    </div>
+                    <div class="col-lg text-center">
+                        <img src="assets/images/plan/3.jpg" alt="skill" class="img-fluid float-left rounded-circle">
+                        <a href="#skill">
+                            <h4>Skill</h4>
+                            <p>"Skill UP"</p>
+                        </a>
+                    </div>
+                    <div class="col-lg text-center">
+                        <img src="assets/images/plan/1.jpg" alt="Pengalaman"
+                            class="img-fluid float-left rounded-circle">
+                        <a href="#pengalaman">
+                            <h4>Pengalaman</h4>
+                            <p>"Kursus | Magang"</p><br>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Tentang saya</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fas fa-quote-left"></i>Saya seorang freshgraduate yang ingin menerapkan kemampuan dan pengetahuan yang dimiliki,
+                                        serta memiliki keinginan untuk terus mempelajari keterampilan baru sehingga dapat
+                                        berkontribusi pada pertumbuhan perusahaan, serta saya mampu membangun dan
+                                        mengembangkan sebuah aplikasi beserta fitur-fitu yang ada, mampu menerapkan algoritma
+                                        pemrograman dengan baik dan senang dengan studi kasus yang baru.
+                                        hobi dalam mengikuti kursus serta pelatihan pemrograman yang ada sehingga cepat
+                                        meningkatkan skill individu dan memiliki minat dan semangat untuk menjadi fullstack developer
+                                        dan machine learning engineer.</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Ttd. Muh. Jamaaluddin Irsyaad </span><i
+                                        class="far fa-smile-beam"
+                                        style='font-size:24px;color:rgba(99, 238, 99, 0.945)'></i><br /><span
+                                        class="title"></span>
+                                </p>
+                            </div>
+                            <!--//item-->
+
+                            <p><a class="more-link" href="https://www.linkedin.com/in/muh-jamaaluddin-irsyaad-4778b7208/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i>Temukan saya di
+                                    Linkedin</a></p>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id="project">PROJECT</h2>
+                        <div class="content">
+                            <div class="item mb-5">
+                                <h3 class="title">WEB APP | BWA Staycation<span
+                                        class="badge badge-theme">fullstack React Javascript</span></h3>
+                                <p class="summary">Aplikasi Staycation merupakan aplikasi hasil proses belajar dari Build with Angga yang dibangun menggunakan <b>Ractjs</b> sebagai framework front-end dan <b>Bootstrap</b> sebagai framework CSS, untuk bagian back-end sendiri menggunakan <b>nodejs</b> sebagai server dan <b>expressjs</b> sebagai framework lalu untuk database serta pembuatan API menggunakan <b>mongodb</b>.
+                                    STAYCATION sendiri merupakan sebuah aplikasi pemesanan hotel sekaligus tempat mencari wisata disekitar hotel yang dipesan.  <a
+                                    href="https://buildwithangga.com" target="_blank">Buildwithangga.com</a>
+                                </p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="container">
+                                            <div class="carousel-item active">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/1.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/2.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/3.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/4.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/5.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/6.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/7.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/8.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/9.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/10.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/11.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/staycation/12.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Akhir Carousel -->
+                                <p><a class="more-link" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <div class="item mb-5">
+                                <h3 class="title">WEB APP | Klinik Pratamaa Sehat <span
+                                        class="badge badge-theme">PHP</span></h3>
+                                <p class="summary">
+                                    Merencanakan dan membangun sebuah aplikasi website pengelolaan pendaftaran pasien
+                                    lama dan baru dan pengelolaan penjualan obat serta seluruh sistem yang ada pada klinik
+                                    Mitra sehat Tamanan yang bertempatkan di jl. imogiri Bantul Yogyakarta, aplikasi ini dirancang dengan bahasa pemrograman <b>PHP, Javascript, css, html</b> dan mengunakan database mySQL.
+                                </p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleControls2" class="carousel slide mb-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="container">
+                                            <div class="carousel-item active">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/klinik/1.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/klinik/2.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/klinik/3.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/klinik/4.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                    </div>
+                                                    <div class="featured-image has-ribbon">
+                                                        <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                            target="_blank">
+                                                            <img class="img-fluid project-image rounded shadow-sm"
+                                                                src="assets/images/projects/klinik/5.PNG"
+                                                                alt="project name" />
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Akhir Carousel -->
+                                <p><a class="more-link" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <div class="item mb-5">
+                                <h3 class="title">ANDROID APP | Printshop<span
+                                        class="badge badge-theme">JAVA & XML</span></h3>
+                                <p class="summary">
+                                    Merencanakan dan membangun sebuah aplikasi android pemesanan produk percetakan
+                                    dengan menggunakan pembayaran metode payment gateway pada Perusahaan percetakan
+                                    Printshop yang bertempatkan di jl. monjali Sleman Yogyakarta, aplikasi ini dibangun menggunakan bahasa pemrograman <b>JAVA</b> sebagai back-end dan <b>XML</b> sebagai bahasa antar muka kemudian menggunakan database noSQL yaitu <b>firebase</b> sebagai tempat penyimpanan data.
+                                </p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleControls3" class="carousel slide mb-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="container">
+                                            <div class="carousel-item active">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/1.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/2.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/3.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/4.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/5.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/6.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/7.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/8.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/9.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/printshop/10.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Akhir Carousel -->
+                                <p><a class="more-link" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <div class="item mb-5">
+                                <h3 class="title">ANDROID APP | Deteksi Siari melalui citra<span
+                                        class="badge badge-theme">JAVA & XML</span></h3>
+                                <p class="summary">
+                                    Merencanakan dan membangun sebuah aplikasi android deteksi sidik jari melalui citra dengan pengambilan citra melalui kamera smartphone, aplikasi ini menggunakan salah satu metode yang ada pada machine learning yaitu <b>metode backpropagation</b>, aplikasi ini dibangun menggunakan bahasa pemrograman <b>JAVA</b> sebagai back-end dan <b>XML</b> sebagai bahasa antar muka kemudian menggunakan database noSQL yaitu <b>firebase</b> sebagai tempat penyimpanan data.
+                                </p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleControls4" class="carousel slide mb-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="container">
+                                            <div class="carousel-item active">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/1.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/2.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/3.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/4.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/5.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/6.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/7.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/sidikjari/8.PNG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls4" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls4" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Akhir Carousel -->
+                                <p><a class="more-link" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+                            <div class="item mb-5">
+                                <h3 class="title">ANDROID APP | Modern Softlens<span
+                                        class="badge badge-theme">JAVA & XML</span></h3>
+                                <p class="summary">
+                                    Merencanakan dan membangun sebuah aplikasi android kelola penjualan, pendataan barang dan pembuatan laporan pada toko modern softlens yang bertempatkan di Jogja City Mall jl. magelang, sleman, Yogyakarta, aplikasi ini dibangun menggunakan bahasa pemrograman <b>JAVA</b> sebagai back-end dan <b>XML</b> sebagai bahasa antar muka kemudian menggunakan database mySQL yaitu <b>SQLite</b> sebagai tempat penyimpanan data.
+                                </p>
+                                <!-- Carousel -->
+                                <div id="carouselExampleControls5" class="carousel slide mb-4" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="container">
+                                            <div class="carousel-item active">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/1.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/2.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/3.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/4.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/5.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/6.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/7.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/8.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="row pt-5 justify-content-center">
+                                                    <div class="col-9 col-sm-4 col-md-6 col-lg-5">
+                                                        <div class="featured-image has-ribbon">
+                                                            <a href="https://github.com/MuhJamaaluddinIrsyaad?tab=repositories"
+                                                                target="_blank">
+                                                                <img class="img-fluid project-image rounded shadow-sm"
+                                                                    src="assets/images/projects/softlens/9.JPG"
+                                                                    alt="project name" />
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls5" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls5" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- Akhir Carousel -->
+                                <p><a class="more-link" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Clone/ Download</a></p>
+                            </div>
+
+
+                            <a class="btn btn-cta-secondary" href="https://github.com/MuhJamaaluddinIrsyaad"
+                                target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </section>
+                <!--//section-->
+
+                <section class="experience section" id="pengalaman">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Pengalaman</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title mb-3">Fullstack Java Script Developer Build With Angga | tahun 2020-2021</h3>
+                                <p>Membangun website menggunakan framework Javascript Reactjs sebagai front-end serta
+                                    framework CSS menggunakan Bootstrap dan Nodejs framework Expressjs sebagai back-end
+                                    lalu menggunakan mongodb sebagai database serta membuat API
+                                </p>
+                            </div>
+                            <!--//item-->
+                            <!-- <div class="item">
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                            </div> -->
+                            <!--//item-->
+
+                            <!-- <div class="item">
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
+                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div> -->
+                            <!--//item-->
+
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                    <!-- </section> -->
+                    <!--//section-->
+                    <!-- <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">GitHub</h2> -->
+                    <!-- <p>Grafik github saya, using github calendar <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.  -->
+
+                    <!-- <div id="github-graph" class="github-graph">
+
+                        </div> -->
+                    <!--//github-graph-->
+
+                    <!-- <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.         -->
+                    <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                    <!-- <div id="ghfeed" class="ghfeed">
+                        </div> -->
+                    <!--//ghfeed-->
+
+                    <!-- </div> -->
+                    <!--//secton-inner-->
+                    <!-- </section> -->
+                    <!--//section-->
+            </div>
+            <!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Pekalongan,
+                                    Indonesia</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                                        href="mailto:mjirsyaad14@gmail.com">mjirsyaad14@gmail.com</a></li>
+                                <li><button type="button" class="btn btn-outline-primary" id="myBtn"><i
+                                            style='font-size:24px;color:rgba(99, 238, 99, 0.945)'
+                                            class="fab fa-whatsapp" aria-hidden="true"></i>Kontak
+                                        saya</button></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading" id="skill">Keterampilan</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Adapun kemampuan yang saya miliki ditampilkan pada draft berikut, meliputi Hardskill
+                                yang saya peroleh dari perguruan tinggi maupun pelatihan dan otodidak.</p>
+
+                            <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">Javascipt, PHP, HTML &amp; CSS<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Java &amp; XML<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Figma<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">mySQL &amp; noSQL<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Bootstrap<span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Medium</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Raectjs, Nodejs &amp; Expressjs <span class="level-label"
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"
+                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                                class="fas fa-info-circle"></i>Basic</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Pendidikan</h2>
+                        <div class="content">
+                            <div class="item">
+                                <a href="http://uty.ac.id/" target="_blank">
+                                    <h3 class="title"><i class="fas fa-graduation-cap"></i> Informatika (S1)</h3>
+                                    <h4 class="university">Universitas Teknologi Yogyakarta <span
+                                            class="year">(2015-2020)</span></h4>
+                                </a>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <a href="http://www.sman1kedungwuni.sch.id/" target="_blank">
+                                    <h3 class="title"><i class="fas fa-graduation-cap"></i> IPA</h3>
+                                    <h4 class="university">SMA Negeri 1 Kedungwuni <span class="year">(2012-2015)</span></h4>
+                                </a>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <!-- <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded"> -->
+                <!-- <h2 class="heading">Latest Blog Posts</h2>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p> -->
+                <!-- <div class="content"> -->
+
+                <!-- </div>//content -->
+                <!-- </div>//section-inner -->
+                <!-- </aside>//section-->
+
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favorit coding musik (Senja)</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.spotify.com" target="_blank">one Only | Pamungkas</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.spotify.com" target="_blank">Rumah ke rumah | Hindia</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.spotify.com" target="_blank">Monolog | Pamungkas</a></li>
+                                <li><i class="fas fa-headphones"></i> <a
+                                        href="https://www.spotify.com" target="_blank">Bertaut | Nadin Amizah</a></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Kompetisi</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="https://www.jasaraharja.co.id/"
+                                        target="_blank">Finalis Jasa Raharja Hackathon (2018)</a> (Yogyakarta,
+                                    Indonesia)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="http://elinfo-website.weebly.com/"
+                                        target="_blank">Finalis ELINFO Mobile Apps Compt. UNY (2017)</a> (Yogyakarta,
+                                    Indonesia)</li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Thanks to</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://jquery.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>jQuery</a></li>
+                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
+                                <li><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap 4 portfolio by
+                                        Xiaoying Riley 3rd Wave Media</a></li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
+
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Pengunjung</h2>
+                        <div class="card border-primary">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="">
+                            <div class="card-body">
+                                <div class="content text-center">
+                                    <!-- Histats.com  START (html only)-->
+                                    <!-- Histats.com  (div with counter) -->
+                                    <div id="histats_counter"></div>
+                                    <!-- Histats.com  START  (aync)-->
+                                    <script type="text/javascript">
+                                        var _Hasync = _Hasync || [];
+                                        _Hasync.push(['Histats.start', '1,4425206,4,3,170,30,00001011']);
+                                        _Hasync.push(['Histats.fasi', '1']);
+                                        _Hasync.push(['Histats.track_hits', '']);
+                                        (function () {
+                                            var hs = document.createElement('script');
+                                            hs.type = 'text/javascript';
+                                            hs.async = true;
+                                            hs.src = ('//s10.histats.com/js15_as.js');
+                                            (document.getElementsByTagName('head')[0] || document
+                                                .getElementsByTagName(
+                                                    'body')[0]).appendChild(hs);
+                                        })();
+                                    </script>
+                                    <noscript><a href="/" target="_blank"><img
+                                                src="//sstatic1.histats.com/0.gif?4425206&101" alt="counter hit make"
+                                                border="0"></a></noscript>
+                                    <!-- Histats.com  END  -->
+                                </div>
+                                <!--//content-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+
+            </div>
+            <!--//secondary-->
+        </div>
+        <!--//row-->
+    </div>
+    <!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Kamu mengakses dengan</a>
+                <i class="fas fa-heart">
+                </i>
+                2020
+            </small>
+        </div>
+        <button onclick="topFunction()" id="Btntop" title="Go to top">Top</button>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <!--modal-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <!---->
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("Btntop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
